@@ -16,7 +16,10 @@ const sub_video_block = document.querySelector('.sup__video');
 
 let mas_video = ["./video/analize_traffic.mp4",
     "./video/security.mp4",
-    "./video/restricted_areas.mp4"];
+    "./video/restricted_areas.mp4",
+    "./video//analize_traffic.webm",
+    "./video/security.webm",
+    "./video/restricted_areas.webm"];
 
 let sup__video = ["аналітики трафіку",
     "охоронних агенцій",
@@ -29,7 +32,10 @@ setInterval(() => {
 
     sub_video_block.innerHTML = `Рішення для <span class="blue__text solution__for">${sup__video[i_video]}</span>
                                 <div class="animation__title"></div>`
-    video.innerHTML = `<video muted autoplay loop src="${mas_video[i_video]}"></video>`
+    video.innerHTML = `<video muted autoplay loop>
+                            <source src="${mas_video[i_video+3]}" type="video/webm">
+                            <source src="${mas_video[i_video]}" type="video/mp4">
+                        </video>`
     const anim__solution = document.querySelector('.solution__for');
 
 
