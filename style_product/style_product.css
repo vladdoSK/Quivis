@@ -187,6 +187,7 @@ main::before{
 .block__functional_include{
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 .bold__list{
@@ -488,7 +489,7 @@ footer{
 
 
     .functional__image.active img{
-        transform: translate(-200px, 50px) scale(1);
+        transform: translate(-250px, 50px) scale(1);
     }
 
     .list__appointment{
