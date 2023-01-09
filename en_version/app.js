@@ -33,7 +33,6 @@ setInterval(() => {
     const anim__solution = document.querySelector('.solution__for');
 
     if (i_video != 3) {
-        console.log("no 3" + " " + i_video);
         setTimeout(() => {
             const animation__title = document.querySelector('.animation__title');
             animation__title.classList.add("active");
@@ -41,7 +40,6 @@ setInterval(() => {
     }
 
     if (i_video != 2) {
-        console.log("no 2" + " " + i_video);
         setTimeout(() => {
             const animation__title = document.querySelector('.animation__title');
             animation__title.classList.remove("active");
