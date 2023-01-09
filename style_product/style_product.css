@@ -124,6 +124,7 @@ main::before{
 
 .block__text{
     font-size: 20px;
+    padding-left: 10px;
 }
 
 .appointment::after{
