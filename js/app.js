@@ -22,7 +22,7 @@ let mas_video = ["./video/analize_traffic.mp4",
     "./video/restricted_areas.webm"];
 
 let sup__video = ["аналітики трафіку",
-    "агенцій",
+    "охоронних агенцій",
     "територій з обмеженим доступом"]
 
 let i_video = 0;
