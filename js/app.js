@@ -15,7 +15,7 @@ const video = document.querySelector(".video__item");
 const sub_video_block = document.querySelector('.sup__video');
 
 let mas_video = ["./video/analize_traffic.mp4",
-    "./video/analize_traffic.mp4",
+    "./video/security.mp4",
     "./video/restricted_areas.mp4"];
 
 let sup__video = ["аналітики трафіку",
