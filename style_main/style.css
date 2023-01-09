@@ -252,6 +252,10 @@ video {
     align-items: center;
 }
 
+.video__1.active, .video__2.active, .video__3.active{
+    display: none;
+}
+
 .block_product {
     color: white;
     display: flex;

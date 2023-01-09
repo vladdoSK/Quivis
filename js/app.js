@@ -1,11 +1,4 @@
 const animation__title = document.querySelector('.animation__title');
-setTimeout(() => {
-    animation__title.classList.add("active");
-}, 300)
-
-setTimeout(() => {
-    animation__title.classList.remove("active");
-}, 9000)
 
 //---------------------------------------------------------
 //---------------------------------------------------------
@@ -13,6 +6,16 @@ setTimeout(() => {
 
 const video = document.querySelector(".video__item");
 const sub_video_block = document.querySelector('.sup__video');
+
+const video__items = document.getElementsByClassName("video");
+
+setTimeout(() => {
+    animation__title.classList.add("active");
+}, 300)
+
+setTimeout(() => {
+    animation__title.classList.remove("active");
+}, 9000)
 
 let mas_video = ["./video/analize_traffic.mp4",
     "./video/security.mp4",
@@ -27,10 +30,19 @@ let i_video = 0;
 setInterval(() => {
     ++i_video;
 
+    console.log(video__items[i_video].duration)
+
     sub_video_block.innerHTML = `Рішення для <span class="blue__text solution__for">${sup__video[i_video]}</span>
-                                <div class="animation__title"></div>`
-    video.innerHTML = `<video muted autoplay loop src="${mas_video[i_video]}"></video>`
-    const anim__solution = document.querySelector('.solution__for');
+                                <div class="animation__title"></div>`;
+    
+    video__items[i_video].classList.remove("active");
+    if(i_video != 0){
+        video__items[i_video-1].classList.add("active");
+    }else {
+        video__items[2].classList.add("active");
+    }                   
+                                /*video.innerHTML = `<video muted autoplay loop src="${mas_video[i_video]}"></video>`
+    const anim__solution = document.querySelector('.solution__for');*/
 
 
     setTimeout(() => {
