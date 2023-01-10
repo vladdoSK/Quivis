@@ -16,11 +16,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const video = document.querySelector(".video__item");
     const sub_video_block = document.querySelector('.sup__video');
 
-    let mas_video = ["./video/security.mp4",
-        "./video/analize_traffic.mp4",
+    let mas_video = ["./video/analize_traffic.mp4",
+        "./video/security.mp4",
         "./video/restricted_areas.mp4",
-        "./video/security.webm",
         "./video//analize_traffic.webm",
+        "./video/security.webm",
         "./video/restricted_areas.webm"];
 
     let sup__video = ["аналітики трафіку",
